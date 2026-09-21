@@ -63,6 +63,21 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#0f0f0f] text-white">
+
+      <div className="border-b border-[#d7b56d]/15 bg-[#d7b56d]/[0.04]">
+        <div className="mx-auto flex max-w-7xl flex-col gap-1 px-6 py-3 text-center sm:flex-row sm:items-center sm:justify-center sm:gap-3">
+          <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#d7b56d]">
+            Demo-проект
+          </span>
+
+          <span className="hidden text-white/20 sm:inline">•</span>
+
+          <span className="text-xs leading-5 text-white/45">
+            Пример сайта для ремонтной компании. Контент, проекты и условия представлены в демонстрационных целях.
+          </span>
+        </div>
+      </div>
+      
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(215,181,109,0.16),transparent_30%)]" />
 
@@ -134,23 +149,29 @@ export default function Home() {
 
               <div className="mt-14 grid max-w-3xl gap-6 border-t border-white/10 pt-8 sm:grid-cols-3">
                 <div>
-                  <div className="text-2xl font-semibold">0 ₽</div>
-                  <div className="mt-1 text-sm text-white/45">
-                    скрытых доплат
+                  <div className="text-lg font-semibold text-[#d7b56d]">
+                    Смета
+                  </div>
+                  <div className="mt-1 text-sm leading-6 text-white/45">
+                    понятный расчёт до начала работ
                   </div>
                 </div>
 
                 <div>
-                  <div className="text-2xl font-semibold">2 года</div>
-                  <div className="mt-1 text-sm text-white/45">
-                    гарантия на работы
+                  <div className="text-lg font-semibold text-[#d7b56d]">
+                    Контроль
+                  </div>
+                  <div className="mt-1 text-sm leading-6 text-white/45">
+                    прозрачные этапы выполнения ремонта
                   </div>
                 </div>
 
                 <div>
-                  <div className="text-2xl font-semibold">100%</div>
-                  <div className="mt-1 text-sm text-white/45">
-                    смета до старта
+                  <div className="text-lg font-semibold text-[#d7b56d]">
+                    Под ключ
+                  </div>
+                  <div className="mt-1 text-sm leading-6 text-white/45">
+                    от первого замера до готового интерьера
                   </div>
                 </div>
               </div>
@@ -165,15 +186,15 @@ export default function Home() {
                 />
               </div>
 
-              <div className="absolute -bottom-6 -left-6 hidden rounded-2xl border border-white/10 bg-black/70 p-5 backdrop-blur-xl sm:block">
-                <div className="text-sm text-white/45">
-                  Средний срок ремонта
-                </div>
-
-                <div className="mt-1 text-2xl font-semibold">
-                  от 60 дней
-                </div>
+             <div className="absolute -bottom-6 -left-6 hidden rounded-2xl border border-white/10 bg-black/70 p-5 backdrop-blur-xl sm:block">
+              <div className="text-sm text-white/45">
+                Предварительный расчёт
               </div>
+
+              <div className="mt-1 text-2xl font-semibold">
+                за 1 минуту
+              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -597,41 +618,41 @@ export default function Home() {
           <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
             <div>
               <div className="text-sm uppercase tracking-[0.25em] text-[#d7b56d]">
-                Наши работы
-              </div>
-
-              <h2 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
-                Реализованные проекты
-              </h2>
+              Пример портфолио
             </div>
 
-            <p className="max-w-md text-white/45">
-              Пока это демонстрационные карточки. Для настоящего клиента сюда
-              загрузим его реальные объекты.
+            <h2 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
+              Как могут выглядеть ваши проекты
+            </h2>
+            </div>
+
+            <p className="max-w-md leading-7 text-white/45">
+              Демонстрация блока портфолио. В рабочей версии здесь размещаются
+              реальные объекты компании, фотографии и результаты ремонта.
             </p>
           </div>
 
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {[
-              {
-                title: "ЖК Самолёт",
-                info: "67 м² · 74 дня",
-                image:
-                  "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
-              },
-              {
-                title: "ЖК Сердце",
-                info: "84 м² · 91 день",
-                image:
-                  "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80",
-              },
-              {
-                title: "ЖК Панорама",
-                info: "52 м² · 63 дня",
-                image:
-                  "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
-              },
-            ].map((project) => (
+                {
+                  title: "Современная квартира",
+                  info: "Пример проекта · 67 м²",
+                  image:
+                    "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
+                },
+                {
+                  title: "Светлый интерьер",
+                  info: "Пример проекта · 84 м²",
+                  image:
+                    "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80",
+                },
+                {
+                  title: "Минималистичный интерьер",
+                  info: "Пример проекта · 52 м²",
+                  image:
+                    "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+                },
+              ].map((project) => (
               <article
                 key={project.title}
                 className="overflow-hidden rounded-[26px] border border-white/10 bg-[#151515]"
@@ -660,20 +681,20 @@ export default function Home() {
       >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-sm uppercase tracking-[0.25em] text-[#d7b56d]">
-            Как мы работаем
+            Пример процесса
           </div>
 
           <h2 className="mt-5 max-w-3xl text-4xl font-semibold tracking-tight sm:text-5xl">
-            Понятный процесс без неприятных сюрпризов
+            Понятный путь клиента от замера до сдачи
           </h2>
 
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {[
-              ["01", "Замер", "Выезжаем на объект и фиксируем все задачи."],
-              ["02", "Смета", "Рассчитываем точную стоимость до начала работ."],
-              ["03", "Ремонт", "Работаем по этапам и отправляем фотоотчёты."],
-              ["04", "Сдача", "Проверяем объект вместе и подписываем акт."],
-            ].map(([number, title, text]) => (
+                ["01", "Замер", "Знакомство с объектом и уточнение задач проекта."],
+                ["02", "Смета", "Расчёт стоимости и согласование объёма работ."],
+                ["03", "Ремонт", "Выполнение согласованных этапов проекта."],
+                ["04", "Сдача", "Финальная проверка и передача готового объекта."],
+              ].map(([number, title, text]) => (
               <div
                 key={number}
                 className="rounded-[24px] border border-white/10 bg-[#101010] p-6"
@@ -692,7 +713,7 @@ export default function Home() {
           <div className="rounded-[32px] bg-[#d7b56d] px-7 py-14 text-black sm:px-12 lg:flex lg:items-center lg:justify-between">
             <div>
               <h2 className="max-w-2xl text-4xl font-semibold tracking-tight">
-                Получите бесплатный расчёт вашего ремонта
+                Узнайте предварительную стоимость ремонта
               </h2>
 
               <p className="mt-4 text-black/60">
@@ -711,9 +732,12 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-white/10 py-8">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 text-sm text-white/35 sm:flex-row sm:justify-between lg:px-8">
-          <span>FORMA РЕМОНТ</span>
-          <span>Краснодар · 2026</span>
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 text-sm text-white/35 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+          <span>FORMA · демонстрационный проект</span>
+
+          <span>
+            Пример сайта для ремонтной компании · Краснодар
+          </span>
         </div>
       </footer>
     </main>
